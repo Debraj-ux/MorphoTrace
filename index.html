@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LeafTrace - QR-Based Digital Plant Documentation System</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f5fff5;
+color:#333;
+}
+
+/* Header */
+
+header{
+background:#1b5e20;
+color:white;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+/* Hero */
+
+.hero{
+height:65vh;
+background:
+linear-gradient(rgba(0,0,0,.5),
+rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1600&q=80');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#4caf50;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+/* About */
+
+.about{
+padding:60px 10%;
+text-align:center;
+}
+
+.about h2{
+color:#1b5e20;
+margin-bottom:20px;
+}
+
+
+/* Plants */
+
+.plants{
+padding:60px 10%;
+}
+
+.plants h2{
+text-align:center;
+margin-bottom:40px;
+color:#1b5e20;
+}
+
+.grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.card-content h3{
+margin-bottom:10px;
+color:#1b5e20;
+}
+
+.card-content a{
+display:inline-block;
+margin-top:10px;
+text-decoration:none;
+background:#2e7d32;
+color:white;
+padding:10px 15px;
+border-radius:6px;
+}
+
+/* Footer */
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.search-section input{
+width:95%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo"> LeafTrace</div>
+
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>LeafTrace</h1>
+
+<p>
+QR-Based Digital Plant Documentation System
+</p>
+
+<p>
+Department of Botany
+<br>
+Sripat Singh College
+</p>
+
+<a href="#plants" class="btn">
+Explore Plants
+</a>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>About LeafTrace</h2>
+
+<p>
+
+LeafTrace is a QR-based digital plant documentation platform developed by the students of the Department of Botany, Sripat Singh College. 
+It serves as a comprehensive digital page showcasing detailed information about all the plants on the college campus. 
+By scanning the QR codes attached to the trees, anyone can instantly access scientific data, photographs, medicinal uses, etc 
+making plant identification interactive and effortless.
+Students can scan QR codes attached to plants
+and instantly access scientific information,
+photographs, medicinal uses, and many more. 
+This innovative approach not only enhances the learning experience but also promotes 
+environmental awareness and conservation efforts within the college community.
+
+</p>
+
+</section>
+
+<br>
+
+
+<section class="plants" id="plants">
+
+<h2>Explore Our Plants</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://cdn.britannica.com/73/177473-050-7B7C6918/aloe-vera-plant.jpg?w=600">
+
+<div class="card-content">
+
+<h3>Aloe Vera</h3>
+
+<p>Medicinal Succulent Plant</p>
+
+<a href="aloe-vera.html">
+Read More
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Neem_Tree_in_Rajasthan%2C_India.jpg/250px-Neem_Tree_in_Rajasthan%2C_India.jpg">
+
+<div class="card-content">
+
+<h3>Neem</h3>
+
+<p>Medicinal Tree</p>
+
+<a href="neem.html">
+Read More
+</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Ashoka_%28Polyalthia_longifolia%29_flowers_W_IMG_7050.jpg">
+
+<div class="card-content">
+
+<h3>Devdaru</h3>
+
+<p>Sacred Tree</p>
+
+<a href="devadaru.html">
+Read More
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://www.greendna.in/cdn/shop/products/1296x728_Holy_Basil_1155x.jpg?v=1591462900">
+
+<div class="card-content">
+
+<h3>Tulsi</h3>
+
+<p>Sacred Medicinal Herb</p>
+
+<a href="tulsi.html">
+Read More
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3> LeafTrace</h3>
+
+<p>
+Developed by: Debraj Bosu Student of Department of Botany
+</p>
+
+<p>
+Sripat Singh College
+</p>
+
+<br>
+
+<p>Scan • Learn • Explore • Conserve</p>
+<p style="margin-top:10px;">
+© 2026 Department of Botany, Sripat Singh College
+</p>
+
+</footer>
+
+</body>
+</html>
